@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meditationapp/screens/sign_in_screen.dart';
+import 'package:meditationapp/screens/sign_up_screen.dart';
 import 'package:meditationapp/screens/welcome_screen.dart';
 
 void main() {
@@ -33,8 +34,8 @@ class MyApp extends StatelessWidget {
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
         '/': (context) => WelcomeScreen(),
-        // When navigating to the "/second" route, build the SecondScreen widget.
-        '/second': (context) => SignInScreen(),
+        '/sign_in': (context) => SignInScreen(),
+        '/sign_up': (context) => SignUpScreen(),
       },
     );
   }
