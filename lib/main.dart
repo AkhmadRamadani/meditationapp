@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditationapp/screens/first_screen.dart';
 import 'package:meditationapp/screens/sign_in_screen.dart';
 import 'package:meditationapp/screens/sign_up_screen.dart';
 import 'package:meditationapp/screens/welcome_screen.dart';
@@ -33,9 +34,10 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // When navigating to the "/" route, build the FirstScreen widget.
-        '/': (context) => WelcomeScreen(),
+        '/': (context) => FirstScreen(),
         '/sign_in': (context) => SignInScreen(),
         '/sign_up': (context) => SignUpScreen(),
+        '/welcome': (context) => WelcomeScreen()
       },
     );
   }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meditationapp/screens/sign_up_screen.dart';
+import 'package:meditationapp/screens/welcome_screen.dart';
 
 class SignInScreen extends StatefulWidget {
   @override
@@ -142,7 +144,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                               MainAxisAlignment.spaceEvenly,
                                           children: <Widget>[
                                             Image(
-                                              width: 12,
+                                              width: 24,
                                               height: 24,
                                               image: AssetImage(
                                                   "lib/assets/images/icons/google_icon.png"),
@@ -238,6 +240,14 @@ class _SignInScreenState extends State<SignInScreen> {
                                   top: MediaQuery.of(context).size.width / 12,
                                 ),
                                 child: FlatButton(
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) =>
+                                              WelcomeScreen()),
+                                    );
+                                  },
                                   splashColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
                                   child: Container(
@@ -275,28 +285,39 @@ class _SignInScreenState extends State<SignInScreen> {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.only(
-                                    top: MediaQuery.of(context).size.width / 20,
-                                    bottom: 10),
-                                alignment: Alignment.bottomCenter,
-                                child: RichText(
-                                  text: TextSpan(
-                                      text: "ALREADY HAVE AN ACCOUNT? ",
-                                      style: TextStyle(
-                                          fontFamily: 'HelveticaNeue',
-                                          fontSize: 16,
-                                          color:
-                                              Color.fromRGBO(161, 164, 178, 1)),
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: "LOG IN",
-                                            style: TextStyle(
+                                  margin: EdgeInsets.only(
+                                      top: MediaQuery.of(context).size.width /
+                                          20,
+                                      bottom: 10),
+                                  alignment: Alignment.bottomCenter,
+                                  child: FlatButton(
+                                    splashColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onPressed: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  SignUpScreen()));
+                                    },
+                                    child: RichText(
+                                      text: TextSpan(
+                                          text: "DOESN'T HAVE AN ACCOUNT? ",
+                                          style: TextStyle(
+                                              fontFamily: 'HelveticaNeue',
+                                              fontSize: 16,
                                               color: Color.fromRGBO(
-                                                  142, 151, 253, 1),
-                                            ))
-                                      ]),
-                                ),
-                              )
+                                                  161, 164, 178, 1)),
+                                          children: <TextSpan>[
+                                            TextSpan(
+                                                text: "SIGN UP",
+                                                style: TextStyle(
+                                                  color: Color.fromRGBO(
+                                                      142, 151, 253, 1),
+                                                ))
+                                          ]),
+                                    ),
+                                  ))
                             ],
                           ),
                         ),
