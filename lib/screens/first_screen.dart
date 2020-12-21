@@ -15,8 +15,8 @@ class _FirstScreenState extends State<FirstScreen> {
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              Container(
-                padding: EdgeInsets.only(top: 20),
+              SafeArea(
+                  child: Container(
                 height: MediaQuery.of(context).size.height / 1.6,
                 decoration: BoxDecoration(
                   image: DecorationImage(
@@ -71,7 +71,7 @@ class _FirstScreenState extends State<FirstScreen> {
                     )
                   ],
                 ),
-              ),
+              )),
               Container(
                 child: Column(
                   children: <Widget>[

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditationapp/screens/choose_topic.dart';
 import 'package:meditationapp/screens/first_screen.dart';
 import 'package:meditationapp/screens/sign_in_screen.dart';
 import 'package:meditationapp/screens/sign_up_screen.dart';
@@ -37,7 +38,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => FirstScreen(),
         '/sign_in': (context) => SignInScreen(),
         '/sign_up': (context) => SignUpScreen(),
-        '/welcome': (context) => WelcomeScreen()
+        '/welcome': (context) => WelcomeScreen(),
+        '/choose_topic': (context) => ChooseTopicScreenWidget()
       },
     );
   }
