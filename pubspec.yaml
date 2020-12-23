@@ -80,19 +80,17 @@ flutter:
           weight: 500
     - family: HelveticaNeue
       fonts:
-        - asset: lib\assets\fonts\Helvetica Neu Bold.ttf
-          weight: 700
-        - asset: lib\assets\fonts\HelveticaNeue BlackCond.ttf
-          weight: 900
-        - asset: lib\assets\fonts\HelveticaNeue Light.ttf
-          weight: 300
-        - asset: lib\assets\fonts\HelveticaNeue Medium.ttf
-          weight: 500
-        - asset: lib\assets\fonts\HelveticaNeue Thin.ttf
-          weight: 100
         - asset: lib\assets\fonts\HelveticaNeue.ttf
-        - asset: lib\assets\fonts\HelveticaNeueIt.ttf
-          style: italic
+        - asset: lib\assets\fonts\HelveticaNeueBd.ttf
+          weight: 700
+        - asset: lib\assets\fonts\HelveticaNeueHv.ttf
+          weight: 900
+        - asset: lib\assets\fonts\HelveticaNeueLt.ttf
+          weight: 300
+        - asset: lib\assets\fonts\HelveticaNeueMed.ttf
+          weight: 500
+        - asset: lib\assets\fonts\HelveticaNeueThin.ttf
+          weight: 100
 
         
   # fonts:

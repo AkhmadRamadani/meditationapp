@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditationapp/screens/reminder_screen.dart';
 
 class ChooseTopicScreenWidget extends StatefulWidget {
   @override
@@ -36,13 +37,13 @@ class _ChooseTopicScreenWidgetState extends State<ChooseTopicScreenWidget> {
                             children: <TextSpan>[
                               TextSpan(
                                 text: "to Silent Moon?",
-                                style: TextStyle(fontWeight: FontWeight.w300),
+                                style: TextStyle(fontWeight: FontWeight.w100),
                               ),
                               TextSpan(
                                 text: "\nchoose a topic to focuse on:",
                                 style: TextStyle(
                                     fontFamily: 'HelveticaNeue',
-                                    fontWeight: FontWeight.w300,
+                                    fontWeight: FontWeight.w100,
                                     fontSize: 16,
                                     height: 2,
                                     color: Color.fromRGBO(161, 164, 178, 1)),
@@ -60,55 +61,72 @@ class _ChooseTopicScreenWidgetState extends State<ChooseTopicScreenWidget> {
                                 alignment: Alignment.topLeft,
                                 child: Column(
                                   children: <Widget>[
-                                    Container(
-                                      width: MediaQuery.of(context).size.width /
-                                              2 -
-                                          28,
-                                      height:
-                                          MediaQuery.of(context).size.width /
-                                                  2 -
-                                              10,
-                                      decoration: BoxDecoration(
-                                          color:
-                                              Color.fromRGBO(142, 151, 253, 1),
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                      child: Stack(
-                                        children: <Widget>[
-                                          Positioned.fill(
-                                              child: ClipRRect(
-                                            borderRadius: BorderRadius.only(
-                                                topLeft: Radius.circular(10),
-                                                topRight: Radius.circular(10)),
-                                            child: Image.asset(
-                                              "lib/assets/images/card1_bg.png",
+                                    FlatButton(
+                                      padding: EdgeInsets.all(0),
+                                      splashColor: Colors.black12,
+                                      highlightColor: Colors.black12,
+                                      onPressed: () {
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) =>
+                                                    ReminderScreen()));
+                                      },
+                                      child: Container(
+                                        width:
+                                            MediaQuery.of(context).size.width /
+                                                    2 -
+                                                28,
+                                        height:
+                                            MediaQuery.of(context).size.width /
+                                                    2 -
+                                                10,
+                                        decoration: BoxDecoration(
+                                            color: Color.fromRGBO(
+                                                142, 151, 253, 1),
+                                            borderRadius:
+                                                BorderRadius.circular(10)),
+                                        child: Stack(
+                                          children: <Widget>[
+                                            Positioned.fill(
+                                                child: ClipRRect(
+                                              borderRadius: BorderRadius.only(
+                                                  topLeft: Radius.circular(10),
+                                                  topRight:
+                                                      Radius.circular(10)),
+                                              child: Image.asset(
+                                                "lib/assets/images/card1_bg.png",
+                                                fit: BoxFit.fitWidth,
+                                                alignment: Alignment.topCenter,
+                                              ),
+                                            )),
+                                            Positioned.fill(
+                                                child: Image.asset(
+                                              "lib/assets/images/card1_vector.png",
                                               fit: BoxFit.fitWidth,
                                               alignment: Alignment.topCenter,
-                                            ),
-                                          )),
-                                          Positioned.fill(
-                                              child: Image.asset(
-                                            "lib/assets/images/card1_vector.png",
-                                            fit: BoxFit.fitWidth,
-                                            alignment: Alignment.topCenter,
-                                          )),
-                                          Positioned.fill(
-                                            child: Container(
-                                              padding: EdgeInsets.symmetric(
-                                                  vertical: 20, horizontal: 15),
-                                              alignment: Alignment.bottomLeft,
-                                              child: Text(
-                                                "Reduce Stress",
-                                                style: TextStyle(
-                                                    fontFamily: "HelveticaNeue",
-                                                    fontSize: 18,
-                                                    fontWeight: FontWeight.w700,
-                                                    color: Color.fromRGBO(
-                                                        255, 236, 204, 1)),
+                                            )),
+                                            Positioned.fill(
+                                              child: Container(
+                                                padding: EdgeInsets.symmetric(
+                                                    vertical: 20,
+                                                    horizontal: 15),
+                                                alignment: Alignment.bottomLeft,
+                                                child: Text(
+                                                  "Reduce Stress",
+                                                  style: TextStyle(
+                                                      fontFamily:
+                                                          "HelveticaNeue",
+                                                      fontSize: 18,
+                                                      fontWeight:
+                                                          FontWeight.w700,
+                                                      color: Color.fromRGBO(
+                                                          255, 236, 204, 1)),
+                                                ),
                                               ),
-                                            ),
-                                          )
-                                        ],
+                                            )
+                                          ],
+                                        ),
                                       ),
                                     ),
                                     Container(

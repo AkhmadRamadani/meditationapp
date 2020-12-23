@@ -76,7 +76,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                       fontFamily: 'HelveticaNeue',
                                       fontSize: 28,
                                       color: Color.fromRGBO(63, 65, 78, 1),
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w500),
                                 ),
                               ),
                               Container(
@@ -201,6 +201,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                           keyboardType:
                                               TextInputType.emailAddress,
                                           style: TextStyle(
+                                              fontWeight: FontWeight.w300,
                                               fontFamily: 'HelveticaNeue'),
                                           decoration: InputDecoration.collapsed(
                                             hintText: "Email address",
@@ -225,6 +226,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                         child: TextField(
                                           obscureText: true,
                                           style: TextStyle(
+                                              fontWeight: FontWeight.w300,
                                               fontFamily: 'HelveticaNeue'),
                                           decoration: InputDecoration.collapsed(
                                             hintText: "Password",
@@ -278,7 +280,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
                                         fontFamily: 'HelveticaNeue',
-                                        fontWeight: FontWeight.w700,
+                                        fontWeight: FontWeight.w300,
                                         fontSize: 14,
                                         color: Color.fromRGBO(63, 65, 78, 1)),
                                   ),
@@ -306,6 +308,7 @@ class _SignInScreenState extends State<SignInScreen> {
                                           style: TextStyle(
                                               fontFamily: 'HelveticaNeue',
                                               fontSize: 16,
+                                              fontWeight: FontWeight.w300,
                                               color: Color.fromRGBO(
                                                   161, 164, 178, 1)),
                                           children: <TextSpan>[

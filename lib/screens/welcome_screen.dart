@@ -76,7 +76,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                   style: TextStyle(
                                       fontFamily: 'HelveticaNeue',
                                       fontSize: 30,
-                                      fontWeight: FontWeight.w700,
+                                      fontWeight: FontWeight.w500,
                                       color: Color.fromRGBO(255, 236, 204, 1)),
                                   children: <TextSpan>[
                                     TextSpan(
@@ -89,7 +89,6 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                               "Explore the app, Find some peace of mind to\nprepare for meditation.",
                               style: TextStyle(
                                   fontFamily: 'HelveticaNeue',
-                                  fontWeight: FontWeight.w300,
                                   fontSize: 16,
                                   color: Color.fromRGBO(255, 236, 204, 1)),
                               textAlign: TextAlign.center,
@@ -127,7 +126,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         textAlign: TextAlign.center,
                         style: TextStyle(
                             fontFamily: 'HelveticaNeue',
-                            fontWeight: FontWeight.w700,
+                            fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(63, 65, 78, 1),
                             fontSize: 16),
                       ))),

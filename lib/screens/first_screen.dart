@@ -84,14 +84,13 @@ class _FirstScreenState extends State<FirstScreen> {
                             "We are what we do",
                             style: TextStyle(
                                 fontFamily: 'HelveticaNeue',
-                                fontWeight: FontWeight.w700,
+                                fontWeight: FontWeight.w500,
                                 fontSize: 30),
                           ),
                           Text(
                             "Thousand of people are using silent moon \nfor smalls meditation ",
                             style: TextStyle(
                                 fontFamily: 'HelveticaNeue',
-                                fontWeight: FontWeight.w300,
                                 fontSize: 16,
                                 color: Color.fromRGBO(161, 164, 178, 1)),
                             textAlign: TextAlign.center,
@@ -150,6 +149,7 @@ class _FirstScreenState extends State<FirstScreen> {
                                   style: TextStyle(
                                       fontFamily: 'HelveticaNeue',
                                       fontSize: 16,
+                                      fontWeight: FontWeight.w300,
                                       color: Color.fromRGBO(161, 164, 178, 1)),
                                   children: <TextSpan>[
                                     TextSpan(

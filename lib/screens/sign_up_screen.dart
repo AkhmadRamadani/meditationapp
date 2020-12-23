@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditationapp/screens/welcome_screen.dart';
 
 class SignUpScreen extends StatefulWidget {
   @override
@@ -76,7 +77,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                       fontFamily: 'HelveticaNeue',
                                       fontSize: 28,
                                       color: Color.fromRGBO(63, 65, 78, 1),
-                                      fontWeight: FontWeight.w700),
+                                      fontWeight: FontWeight.w500),
                                 ),
                               ),
                               Container(
@@ -207,6 +208,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                                   keyboardType: TextInputType
                                                       .emailAddress,
                                                   style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.w300,
                                                       fontFamily:
                                                           'HelveticaNeue'),
                                                   decoration:
@@ -249,6 +252,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                                   keyboardType: TextInputType
                                                       .emailAddress,
                                                   style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.w300,
                                                       fontFamily:
                                                           'HelveticaNeue'),
                                                   decoration:
@@ -290,6 +295,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                                 child: TextField(
                                                   obscureText: !show_password,
                                                   style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.w300,
                                                       fontFamily:
                                                           'HelveticaNeue'),
                                                   decoration:
@@ -345,6 +352,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                           text: "I have read the ",
                                           style: TextStyle(
                                               fontFamily: 'HelveticaNeue',
+                                              fontWeight: FontWeight.w300,
                                               fontSize: 16,
                                               color: Color.fromRGBO(
                                                   161, 164, 178, 1)),
@@ -369,12 +377,20 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 ),
                               ),
                               Container(
-                                margin: EdgeInsets.only(
-                                  top: MediaQuery.of(context).size.width / 24,
+                                margin: EdgeInsets.symmetric(
+                                  vertical:
+                                      MediaQuery.of(context).size.width / 24,
                                 ),
                                 child: FlatButton(
                                   splashColor: Colors.transparent,
                                   highlightColor: Colors.transparent,
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                WelcomeScreen()));
+                                  },
                                   child: Container(
                                       width: MediaQuery.of(context).size.width -
                                           50,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:meditationapp/screens/choose_topic.dart';
 import 'package:meditationapp/screens/first_screen.dart';
+import 'package:meditationapp/screens/main_screen.dart';
+import 'package:meditationapp/screens/reminder_screen.dart';
 import 'package:meditationapp/screens/sign_in_screen.dart';
 import 'package:meditationapp/screens/sign_up_screen.dart';
 import 'package:meditationapp/screens/welcome_screen.dart';
@@ -39,7 +41,9 @@ class MyApp extends StatelessWidget {
         '/sign_in': (context) => SignInScreen(),
         '/sign_up': (context) => SignUpScreen(),
         '/welcome': (context) => WelcomeScreen(),
-        '/choose_topic': (context) => ChooseTopicScreenWidget()
+        '/choose_topic': (context) => ChooseTopicScreenWidget(),
+        'reminder': (context) => ReminderScreen(),
+        '/main': (context) => MainScreen()
       },
     );
   }
