@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meditationapp/screens/choose_topic.dart';
+import 'package:meditationapp/screens/course_detail.dart';
 import 'package:meditationapp/screens/first_screen.dart';
 import 'package:meditationapp/screens/main_screen.dart';
 import 'package:meditationapp/screens/reminder_screen.dart';
@@ -43,7 +44,8 @@ class MyApp extends StatelessWidget {
         '/welcome': (context) => WelcomeScreen(),
         '/choose_topic': (context) => ChooseTopicScreenWidget(),
         'reminder': (context) => ReminderScreen(),
-        '/main': (context) => MainScreen()
+        '/main': (context) => MainScreen(),
+        '/course_detail': (context) => CourseDetail()
       },
     );
   }

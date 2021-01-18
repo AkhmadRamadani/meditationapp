@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   google_fonts: ^1.1.1
   shared_preferences: ^0.5.12+4
+  font_awesome_flutter: ^8.11.0
 
 dev_dependencies:
   flutter_test:
@@ -86,12 +87,14 @@ flutter:
         - asset: lib\assets\fonts\HelveticaNeueHv.ttf
           weight: 900
         - asset: lib\assets\fonts\HelveticaNeueLt.ttf
-          weight: 300
+          weight: 100
         - asset: lib\assets\fonts\HelveticaNeueMed.ttf
           weight: 500
         - asset: lib\assets\fonts\HelveticaNeueThin.ttf
-          weight: 100
-
+          weight: 300
+    - family: Garamond Premiere Pro
+      fonts:
+        - asset: lib\assets\fonts\GaramondPremrPro.otf
         
   # fonts:
   #   - family: Schyler

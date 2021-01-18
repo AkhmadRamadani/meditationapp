@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meditationapp/screens/course_detail.dart';
 
 class HomeFragment extends StatefulWidget {
   @override
@@ -91,7 +92,13 @@ class _HomeFragmentState extends State<HomeFragment> {
                                   padding: EdgeInsets.all(0),
                                   splashColor: Colors.black12,
                                   highlightColor: Colors.black12,
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                CourseDetail()));
+                                  },
                                   child: Container(
                                       width: MediaQuery.of(context).size.width /
                                               2 -
@@ -384,12 +391,9 @@ class _HomeFragmentState extends State<HomeFragment> {
                               width: 40,
                               height: 40,
                               alignment: Alignment.center,
-                              child: Image(
-                                width: 12,
-                                height: 12,
-                                image: AssetImage(
-                                    "lib/assets/images/icons/play_icon.png"),
-                              ),
+                              child: Icon(Icons.play_arrow,
+                                  size: 24,
+                                  color: Color.fromRGBO(63, 65, 78, 1)),
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(50),
                                   color: Colors.white),
