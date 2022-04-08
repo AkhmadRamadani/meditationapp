@@ -80,7 +80,7 @@ class _MainScreenState extends State<MainScreen> {
                   width: 40,
                   height: 40,
                 ),
-                title: Text("Home"),
+                label: "Home",
               ),
               BottomNavigationBarItem(
                 icon: Image.asset(
@@ -93,7 +93,7 @@ class _MainScreenState extends State<MainScreen> {
                   width: 40,
                   height: 40,
                 ),
-                title: Text("Sleep"),
+                label: "Sleep",
               ),
               BottomNavigationBarItem(
                 icon: _isDark
@@ -112,7 +112,7 @@ class _MainScreenState extends State<MainScreen> {
                   width: 40,
                   height: 40,
                 ),
-                title: Text("Meditate"),
+                label: "Meditate",
               ),
               BottomNavigationBarItem(
                 icon: _isDark
@@ -131,7 +131,7 @@ class _MainScreenState extends State<MainScreen> {
                   width: 40,
                   height: 40,
                 ),
-                title: Text("Music"),
+                label: "Music",
               ),
               BottomNavigationBarItem(
                 icon: _isDark
@@ -150,7 +150,7 @@ class _MainScreenState extends State<MainScreen> {
                   width: 40,
                   height: 40,
                 ),
-                title: Text("Afsar"),
+                label: "Afsar",
               ),
             ],
           ),
